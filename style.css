@@ -1,0 +1,331 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,400;0,500;0,700;0,800;0,900;1,200;1,400;1,500;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body ::-webkit-scrollbar-track{
+  background-color: white;
+
+}
+
+body ::-webkit-scrollbar-thumb{
+  color: black
+}
+
+body {
+  font-family: "Fira Sans", serif;
+  max-width: 1400px;
+  margin: 0px auto;
+  background-color: #ecf0f1;
+  color: #060606;
+}
+
+a {
+  text-decoration: none;
+  color: #0724e1;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 25px;
+  height: 75px;
+  color: #080a0a;
+}
+
+.left a {
+  position: relative;
+  color: rgb(7, 7, 7);
+  font-weight: bold;
+  font-size: 30px;
+  left: 37px;
+}
+
+.right a {
+  color: rgb(12, 12, 12);
+  margin: 0px 8px;
+}
+
+.right a {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  padding: 10px;
+}
+
+.right a:hover {
+  transition: 0.5s;
+  background-color: black;
+  color: white;
+  border-radius: 35px;
+}
+
+.right a:hover i,
+.right a:hover span {
+  color: white;
+  transition: 0.5s;
+}
+
+span {
+  padding: 3px;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 50px;
+  margin: 15px;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.main h2 {
+  font-size: 45px;
+}
+
+.links {
+  margin-top: 20px;
+}
+
+.links a {
+  width: 145px;
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px 15px;
+  border: 1px solid black;
+  margin: 5px;
+  margin-bottom: 10px;
+  background-color: rgb(9, 24, 189);
+  color: white;
+}
+
+.links a:hover {
+  background-color: black;
+  color: white;
+  border-radius: 15px;
+  transition: 0.4s;
+}
+
+.infoSection {
+  flex: 5;
+  background-color: rgb(252, 252, 81);
+  padding: 25px 50px;
+  border-radius: 25px;
+}
+
+.image {
+  flex: 2;
+  display: flex;
+  justify-content: right;
+}
+
+.image img {
+  border-radius: 40%;
+  width: 350px;
+}
+
+.skills-section {
+  height: 300px;
+  margin-top: 60px;
+  padding: 20px 50px;
+  margin-bottom: 100px;
+  background-color: #40045c;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 0 4px 8px rgba(241, 240, 240, 0.1);
+}
+
+.skills-section h2 {
+ position: relative;
+ top: 15px;
+  text-align: center;
+  font-size: 35px;
+  color: #feffff;
+}
+.skills-section .text {
+  position: relative;
+ top: 15px;
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 25px;
+}
+
+.skills-section .cells {
+  position: relative;
+ top: 15px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.skills-section .cells .cell {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  padding: 10px 25px;
+  border: 1px solid rgb(166, 162, 162);
+  gap: 10px;
+  background-color: #0d0d0d;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cell img {
+  height: 40px;
+  width: 40px;
+  object-fit: contain;
+}
+
+#projects {
+  padding: 50px 0px;
+}
+
+#projects p {
+  text-align: center;
+  padding: 45px;
+  font-size: 20px;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.project {
+  background-color: #fff;
+  padding: 20px;
+  margin: 40px 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.project:hover {
+  transform: scale(1.05);
+}
+
+.project img {
+  max-width: 500px;
+  height: 400px;
+}
+
+.project h3 {
+  font-size: 1.5em;
+  margin: 15px 0;
+  text-decoration: underline;
+}
+
+.project p {
+  font-size: 20px;
+  color: #333;
+}
+
+.contact-section {
+  height: 520px;
+  background-color: rgb(241, 217, 63);
+  padding-left: 45px;
+  padding-right: 45px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 100px;
+  margin-top: 50px;
+  border-radius: 20px;
+}
+
+.contact-section .group {
+  display: flex;
+  gap: 50px;
+}
+
+.contact-section h3 {
+  font-size: 35px;
+}
+.contact-section .group .textGroup {
+  flex: 3;
+  margin-top: 20px;
+}
+
+.contact-section .group form {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-section .group form input,
+.contact-section .group form textarea {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  height: 45px;
+  width: 100%;
+  border: 1px solid grey;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.contact-section .group form .msg {
+  height: 170px;
+  resize: none;
+}
+.contact-section .group form label {
+  margin-bottom: 5px;
+}
+
+.contact-section .group form button {
+  height: 40px;
+  cursor: pointer;
+  background-color: #3498db;
+  color: #ecf0f1;
+  border: none;
+  border-radius: 20px;
+  transition: 0.4s;
+}
+.contact-section .group form button:hover {
+  background-color: #2980b9;
+  color: #ecf0f1;
+  border-radius: 25px;
+  transition: 0.4s;
+}
+
+footer {
+  background-color: #ecf0f1;
+  color: #080808;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+  font-size: px;
+}
+
+footer .social-links {
+  margin-top: 10px;
+}
+
+footer .social-links a {
+  color: black;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+footer .social-links a:hover {
+  color: black;
+}
